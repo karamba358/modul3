@@ -41,7 +41,18 @@ img{
     margin-right: auto;
 
 }
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 body{
     font-family:var(--primari-font-family);
     color: var(--title-color);
@@ -69,7 +80,7 @@ body{
     align-items: center;
 }
 .logo { 
-     margin-right: 95px; 
+  margin-right: 95px; 
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -79,14 +90,17 @@ body{
 
   color:var(--accent-color);
 }
-.logo-header{
+.logo-black{
     color:var(--title-color);
 }
 
-.logo-footre{
+.logo-white{
     color:var(--secondary-color);
 }
-
+.logo-footer{
+    display: inline-block;
+    margin-bottom: 20px;
+}
 .nav-list{
     display: flex;
     align-items: center;
@@ -140,27 +154,30 @@ color:var(--text-color);
     color:var(--accent-color);
 }
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--secondary-background-color);
     text-align: center;
 }
 .main-title{
-  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto; 
   margin-bottom: 30px;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
 
-letter-spacing: 0.06em;
-text-transform: uppercase;
+ letter-spacing: 0.06em;
+ text-transform: uppercase;
 
-color: var(--secondary-color);
+ color: var(--secondary-color);
 
 }
 
 .modal-btn{
 min-width: 152px;
-margin-bottom: 200px;
 padding: 10px  32px;
 border: 0px;
 
@@ -181,6 +198,7 @@ background:var(--accent-color);
 }
 .title{
     visibility: hidden;
+    
 }
 
 .attribute-list{
@@ -215,6 +233,9 @@ letter-spacing: 0.03em;
 
 color: var(--text-color);
 
+}
+.work{
+    padding-top: 0px;
 }
 .work-list{
     display: flex;
@@ -276,8 +297,11 @@ color:var(--text-color);
 
 }
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--secondary-background-color);
 }
+
 .address-list-link{
 font-family:var(--primari-font-family);
 font-style: normal;
@@ -286,6 +310,9 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 
 color: var(--secondary-color);
+}
+.nav-list-item-footer:not(:last-child){
+    margin-bottom: 9px;
 }
 .mail,
 .tel{
@@ -320,6 +347,7 @@ color: var(--secondary-color);
    color: var(--title-color);
    background-color: var(--primari-background-color);
 }
+
 .new-pading{
     padding-left: 25px;
     padding-right: 25px;
@@ -346,23 +374,24 @@ color: var(--secondary-color);
 
 
 .portfolio-list-titel{
-font-family: var(--primari-font-family);
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
+  margin-bottom: 4px;
+  font-family: var(--primari-font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
 
-letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 
-color: var(--title-color);
+  color: var(--title-color);
 }
 .portfolio-list-text{
-font-family: var(--primari-font-family);
-font-size: 16px;
-line-height: 1.88;
+  font-family: var(--primari-font-family);
+  font-size: 16px;
+  line-height: 1.88;
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color:var(--text-color);
+  color:var(--text-color);
 
 }
 .portfolio-data{
