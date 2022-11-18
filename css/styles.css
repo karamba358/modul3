@@ -67,9 +67,7 @@ body{
 }
 .header{
     background-color: var(--secondary-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .header-container{
     display: flex;
@@ -100,6 +98,7 @@ body{
 .logo-footer{
     display: inline-block;
     margin-bottom: 20px;
+    margin-right: 0px;
 }
 .nav-list{
     display: flex;
@@ -110,6 +109,9 @@ body{
     margin-right: 50px;
 }
 .nav-list-link{
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -127,9 +129,10 @@ body{
     display: flex;
     margin-left: auto;
 }
-
+.contacts-list-item{
+    margin-right: 50px;
+}
 .contacts-mail{
-  margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -243,7 +246,6 @@ color: var(--text-color);
     margin-top: -30px;
 }
 .work-item{
-    flex-basis: calc((100%-3*30)/3);
     margin-left: 30px;
     margin-top: 30px; 
 }
@@ -266,7 +268,6 @@ letter-spacing: 0.03em;
 color: var(--title-color);
 }
 .collectivity-item{
-    flex-basis: calc((100%-4*30)/4);
     margin-left: 30px;
     margin-top: 30px;
     background-color: var(--secondary-color);
@@ -367,7 +368,7 @@ color: var(--secondary-color);
 }
 
 .portfolio-list-item{
-    flex-basis: calc((100%-9*30)/9);
+    
     margin-left: 30px;
     margin-top: 30px;
 }
@@ -397,4 +398,5 @@ color: var(--secondary-color);
 .portfolio-data{
     padding: 20px  24px;
     border: 1px solid #EEEEEE;
+    border-top: 0px;
 }
